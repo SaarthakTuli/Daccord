@@ -4,14 +4,31 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
+.env
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+###### =========== CLERK
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=XXXXXXXXX
+CLERK_SECRET_KEY=sk_test_XXXXXX
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL = /sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL = /sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL = /
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL = /
+
+
+###### =========== SUPABASE
+NEXT_PUBLIC_SUPABASE_URL=XXXXXXXXX
+NEXT_PUBLIC_SUPABASE_ANON_KEY=XXXXXXXX
+DATABASE_URL=XXXXXXXX
+
+###### =========== UPLOADTHING
+UPLOADTHING_SECRET=sk_test_XXXXXXXX
+UPLOADTHING_APP_ID=XXXXXXXX
+
+###### =========== LiveKit
+LIVEKIT_API_KEY=XXXXXXXX
+LIVEKIT_API_SECRET=XXXXXXXX
+NEXT_PUBLIC_LIVEKIT_URL=wss://XXXXXXXX
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
